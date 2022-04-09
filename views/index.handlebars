@@ -1,0 +1,36 @@
+ <header>
+          <h1>Somos a melhor Plataforma de Divulgação de Vagas de Emprego em São Tomé e Príncipe</h1>
+          <h2>Nós temos vagas de todos os tipos</h2>
+    </header>
+
+    <main>
+        <section id="pesquisa">
+              <form action="/
+              " method="get">
+               <input type="text" name="vaga" id="vaga" placeholder="digite a vaga que está buscando">
+               <button type="submit">pesquisar</button>
+              </form>
+        </section>
+         <section id="container-vaga">
+             {{#if buscador}}
+                <h2 id="destaque">Buscando vagas que contêm: {{buscador}}</h2>
+             {{else}}
+               <h2 id="destaque">Veja as nossas Vagas em destaque</h2>
+               {{/if}}
+               <hr>
+               <ul id="lista-vaga">
+                   <!--Fazendo o loop na li, para adicionar dinamicamento os registros da base de dados na view -->
+                   {{#each vagas}}
+                    <li>
+                        <img src="/job-con.png" alt="logo-empresa">
+                        <p>{{dataValues.empresa}}</p>
+                        <h2>{{dataValues.titulo}}</h2>
+                        <p>{{dataValues.salario}}STN</p>
+                        <a id="editar" href="/vagas/update/{{dataValues.id}}"><i class="fa fa-edit"></i>editar</a>
+                        <a id="apagar" href="/vagas/del/{{dataValues.id}}"><i class="fa fa-trash"></i>apagar</a>
+                        <a id="detalhe" href="/vagas/detalhe/{{dataValues.id}}">detalhes</a>
+                    </li>
+                     {{/each}}
+               </ul>
+         </section>     
+    </main>

@@ -1,0 +1,33 @@
+<header>
+          <h1>Preencha o formulário para criar a sua vaga</h1>
+          <h2>Seja claro no preenchimento do formulário para atrair o profissional desejado!</h2>
+    </header>
+
+    <main>
+        <div id="formulario-container">
+            <form action="/vagas/add" method="post">
+               <span id="titulo"> 
+                <label for="titulo">Título da vaga:</label>
+                <input type="text" name="titulo" id="titulo" placeholder="Digite o título da vaga" required/>
+                <small id="titulo-ajuda">O título é muito importante, seja claro e objetivo</small>
+               </span>
+               <span id="descricao">
+                    <label for="descricao">Descrição da vaga:</label>
+                    <textarea name="descricao" id="descricao"  type="text" placeholder="Descreva os requisitos e as atividades do profissional...." required></textarea>
+               </span>
+               <span id="empresa">
+                    <label for="empresa">Empresa contratante:</label>
+                    <input type="text" name="empresa" id="empresa" placeholder="Digite o nome da sua empresa" required>
+               </span>
+               <span id="email">
+                   <label for="email">E-mail para contato:</label>
+                   <input type="text" name="email" id="email" placeholder="Digite o e-mail para contato" required />
+               </span> 
+               <span id="salario">
+                    <label for="salario">Salário oferecio:</label>
+                    <input type="number" name="salario" id="salario" placeholder="Digite o salario da vaga" required />
+               </span>
+               <button id="enviar" type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>

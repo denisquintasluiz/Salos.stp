@@ -1,0 +1,16 @@
+<span id="detalhes-container">
+    <div id="group-detalhe">
+        <a  id ="voltar" href="/">voltar</a>
+        <div id="empresa-imagem">
+            <img id="foto-perfil" src="/job-con.png" alt="logo-empresa">
+        </div>
+         <div id="detalhes-itens">
+             <h1>{{vaga.dataValues.titulo}}</h1>
+             <p id="negrito">Requisitos que o profissional deve ter:</p>
+             <p id="vaga-decricao">{{vaga.dataValues.descricao}}</p>
+             <p><span id="negrito">O salário pago é de: </span>{{vaga.dataValues.salario}}STN</p>
+             <p>Para trabalhar na <span id="negrito">{{vaga.dataValues.empresa}}</span> envie um e-mail para <a href="mail:to{{vaga.dataValues.email}}">{{vaga.dataValues.email}}</a>
+             </p>
+         </div>
+    </div>
+</span>

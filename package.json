@@ -1,0 +1,24 @@
+{
+  "name": "crud-vagas",
+  "version": "1.0.0",
+  "description": "projeto que implementa as 4 funcionalidades basicas do sql",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "create",
+    "update",
+    "select",
+    "insert"
+  ],
+  "author": "Denis Quintas Luiz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "express-handlebars": "^5.0.0",
+    "sequelize": "^6.17.0",
+    "sqlite3": "^5.0.2"
+  }
+}
