@@ -12,26 +12,9 @@
     ></script>
 </head>
     <!--Nav Bar-->
-    <nav>
-        <ul>
-            <li id="logo-marca" target="_self">
-                <a href="/">Salos.stp</a></li>
-            <li id="vaga" target="_blank" type="external">
-                <a href="/vagas/add">criar vaga</a></li>
-            <li id="sobre" traget="_blank" type="external">
-                <a href="/vagas/sobre">sobre</a></li>
-        </ul>   
-    </nav>
-
+    {{>_navbar}}
     <!--Define o HTML do corpo da Aplicação -->
     {{{body}}}
-   
-    <footer>
-        <p id="primeiro-footer">Desenvolvido por Denis Quintas Luiz &copy; 2022</p>
-        <p id="segundo-footer">Feito com NodeJs, ExpressJs, Express-Handlebars, body-parser, Sequelize e Sqlite3</p>
-        <div id="footer-links">
-          <a class="footers" href="" target="_blank" type="external" class="links"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a class="footers" href="" target="_blank" type="external" class="links"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a class="footers" href="" target="_blank" type="external" class="links"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        </div>
-    </footer>
+   <!--Footer-->
+    {{>_footer}}
+</html>
